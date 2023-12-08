@@ -74,13 +74,13 @@ def find_cga_and_following(text):
         index = text.find('CGA', index)
         if index == -1:
             break
-        if index + 14 <= len(text):  # Check if there are enough characters after 'CGA'
-            results.append(text[index:index+14])  # 'CGA' + 11 characters
+        if index + (actualkeyLength+3) <= len(text):  # Check if there are enough characters after 'CGA'
+            results.append(text[index:index+(actualkeyLength+3)])  # 'CGA' + 11 characters
         index += 3  # Move past the current 'CGA'
     return results
 
 # Read the file
-file = open("ciphertext.txt", "r")
+file = open("ciphertext (1).txt", "r")
 data = file.read()
 characterlist = [letter for letter in data if letter.isalpha()]  # Filter out non-alphabetic characters
 
