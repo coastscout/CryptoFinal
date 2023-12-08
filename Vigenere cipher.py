@@ -100,5 +100,6 @@ decrypted_message = decrypt_vigenere(''.join(characterlist), decryption_key)
 # Find 'CGA' and the following 11 characters
 cga_results = find_cga_and_following(decrypted_message)
 print("Occurrences of 'CGA' followed by 11 characters: ", cga_results)
-
+#If you need to see more characters after CGA, go to line 77 and 78 and change the 14s to something larger to see
+#the whole key.
 file.close()
