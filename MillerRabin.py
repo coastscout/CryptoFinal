@@ -1,5 +1,5 @@
 import random
-
+#@author: Dominic
 # Get user input for testing
 numtest = int(input("What number are you testing? "))
 witness = int(input("What number is your witness? "))
@@ -25,7 +25,7 @@ def miller_rabin(numtest, witness):
     if b0 == 1 or b0 == numtest - 1:
         return True, b_values  #Inconclusive, possibly prime
     
-    for _ in range(k):
+    for _ in range(k-1):
         b0 = pow(b0, 2, numtest)
         b_values.append(b0)
         if b0 == numtest - 1:
