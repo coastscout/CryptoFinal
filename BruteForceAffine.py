@@ -42,6 +42,7 @@ def affine_decrypt(cipher, key):
 def main():
     # Get user input for the phrase to decipher
     text = input("Enter the phrase to decipher: ").upper()
+    #text = "tdbivdvwboq"
 
     # Iterate over all possible keys
     for a in range(1, 26):  # a should be coprime with 26
