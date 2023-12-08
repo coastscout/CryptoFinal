@@ -1,0 +1,19 @@
+Attached key is Alice (we assume)
+Assume we are Bob
+
+Read values in public key: 
+openssl pkey -in key.pem -text
+
+record private key, public, modulus, and g
+convert from hex to decimal
+A = pow(g, private, mod) //private, Alice's private
+k = hex(pow(A,5,mod)) //Im Bob, and I just got A  5 is my private key
+
+Select all asymetric encryption algrithms and place them in the brackets of the flag (cga{}). Make sure they are in alphabetical order, all caps, no spaces and comma seperated. For example cga{A,B,C}. AES, AFFINE, DES, ELGAMAL, ENIGMA, MD5, OTP (One Time Pad), RSA, SHA1, SHA256, SHA512, TDES (Triple DES), and VIGINERE.
+
+
+AES: replaced DES symmetric
+md5 is a hashing algorithm: it is not a type of assymetric algo
+SHA is also a hashing algorithm
+
+CGA{ELGAMAL,RSA}
