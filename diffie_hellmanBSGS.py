@@ -1,4 +1,4 @@
-# From https://en.wikipedia.org/wiki/Baby-step_giant-step
+# From qubard, edited slightly for cryptography final
 
 import math
 
